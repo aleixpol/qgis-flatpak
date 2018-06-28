@@ -1,9 +1,9 @@
 
 {
     "id": "org.qgis.qgis",
-    "branch": "5.9",
+    "branch": "5.11",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.9",
+    "runtime-version": "5.11",
     "sdk": "org.kde.Sdk",
     "command": "qgis",
     "tags": ["nightly"],
@@ -165,6 +165,11 @@
                     "type": "archive",
                     "url": "https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9.2/PyQt5_gpl-5.9.2.tar.gz",
                     "sha256": "c190dac598c97b0113ca5e7a37c71c623f02d1d713088addfacac4acfa4b8394"
+                    },
+                    {
+                        "type": "patch",
+                        "---source": "https://src.fedoraproject.org/rpms/python-qt5/raw/47fb7fdc5d16582772f9c3fc8a6a674a41a7f605/f/PyQt5-qt511.patch",
+                        "path": "PyQt5-qt511.patch"
                     }
                 ],
                 "modules": [
